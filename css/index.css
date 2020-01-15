@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -215,6 +215,34 @@ img {
   color: #212529;
   text-decoration: none;
 }
+@keyframes colorchanger {
+  0% {
+    font-size: 1rem;
+    font-weight: 300px;
+    width: 40%;
+  }
+  25% {
+    font-size: 1.5rem;
+    font-weight: 400px;
+    width: 50%;
+    font-weight: bold;
+  }
+  50% {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 75%;
+  }
+  75% {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 125%;
+  }
+  100% {
+    font-size: 1rem;
+    font-weight: 300px;
+    width: 1650%;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed #C0C0C0;
@@ -225,6 +253,7 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+  animation: colorchanger 2s 3;
 }
 .home .intro {
   padding: 90px 0 10px;
